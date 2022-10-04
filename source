@@ -2213,7 +2213,6 @@ end)
 
 
 
-
 --LOCAL PLAYER
 local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("Player")
