@@ -3379,8 +3379,6 @@ end
 print"CROW HUB SCRIPT LOADED"
 end)
 
-
-
 --LOCAL PLAYER
 local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("Player")
