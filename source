@@ -5,6 +5,11 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
 
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Enjoy!" ,"All")
 
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
 -- MAIN
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
