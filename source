@@ -1,14 +1,10 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Crow Gui V1", "MidNight")
+local Window = Library.CreateLib("Crow Gui V1", "Ocean")
 
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Crow Scripts Version V1" ,"All")
 
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Enjoy!" ,"All")
 
-
-Section:NewKeybind("RightAlt", "RightAlt", Enum.KeyCode.F, function()
-	Library:ToggleUI()
-end)
 
 -- MAIN
 local Main = Window:NewTab("Main")
