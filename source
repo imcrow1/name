@@ -3448,7 +3448,7 @@ local J=((getfenv)or(function(...)return(_ENV);end))();local t=J["\116\111\110\1
 end)
 
 
-MainSection:NewButton("InfinityYield", "The Best Admin Script in the game", function()
+MainSection:NewButton("Slap Battle Candy", "Beta!", function()
 local ws = game.Workspace
 local player = game.Players.LocalPlayer
 
