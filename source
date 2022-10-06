@@ -3448,6 +3448,47 @@ local J=((getfenv)or(function(...)return(_ENV);end))();local t=J["\116\111\110\1
 end)
 
 
+MainSection:NewButton("InfinityYield", "The Best Admin Script in the game", function()
+local ws = game.Workspace
+local player = game.Players.LocalPlayer
+
+local cons = {}
+
+local TweenService = game:GetService("TweenService")
+local tweenInfo = TweenInfo.new(
+	0.6, -- Time
+	Enum.EasingStyle.Linear, -- EasingStyle
+	Enum.EasingDirection.Out, -- EasingDirection
+	0, -- RepeatCount (when less than zero the tween will loop indefinitely)
+	false, -- Reverses (tween will reverse once reaching it's goal)
+	0.1 -- DelayTime
+)
+local count = 0
+
+for i, v in pairs(ws.CandyCorns:GetChildren()) do
+    local me = player.Character.HumanoidRootPart
+    local candy = v.Position
+    
+    local tween = TweenService:Create(me, tweenInfo, {CFrame = CFrame.new(candy)})
+    tween:Play()
+    tween.Completed:Wait()
+    tween:Destroy()
+    break
+end
+
+ws.CandyCorns.ChildAdded:Connect(function(child)
+    local me = player.Character.HumanoidRootPart
+    local candy = child.Position
+    
+    local tween = TweenService:Create(me, tweenInfo, {CFrame = CFrame.new(candy)})
+    tween:Play()
+    tween.Completed:Wait()
+    tween:Destroy()
+end)
+end)
+
+
+
 --LOCAL PLAYER
 local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("Player")
