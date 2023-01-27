@@ -3428,17 +3428,7 @@ _G.HeadSize = 20 _G.Disabled = true game:GetService('RunService').RenderStepped:
 end)
 
 
---LOCAL PLAYER
-local Player = Window:NewTab("Player")
-local PlayerSection = Player:NewSection("Player")
 
-PlayerSection:NewSlider("WalkSpeed", "Makes You Fast", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
-	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-
-PlayerSection:NewSlider("JumpPower", "Jump High!", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
-	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-end)
 
 
 
@@ -3452,4 +3442,19 @@ MainSection:NewButton("Farming 30k+", "Animal Sim", function()
         game:GetService("Workspace")[game.Players.LocalPlayer.Name].justFound:Destroy()
     end
 end
+end)
+
+
+
+
+--LOCAL PLAYER
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("WalkSpeed", "Makes You Fast", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "Jump High!", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
