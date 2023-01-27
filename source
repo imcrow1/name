@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Crow Gui V1", "Midnight")
 
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Crow Scripts Version V1" ,"All")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Lost Scripts Version V1" ,"All")
 
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Enjoy!" ,"All")
 
@@ -3434,7 +3434,7 @@ end)
 
 MainSection:NewButton("Farming 30k+", "Animal Sim", function()
 	while true do
-    wait(0.1)
+    wait(0.01)
     local Event = game:GetService("ReplicatedStorage").Events.CoinEvent
     Event:FireServer()
 
