@@ -3439,3 +3439,17 @@ end)
 PlayerSection:NewSlider("JumpPower", "Jump High!", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
+
+
+
+MainSection:NewButton("Farming 30k+", "Animal Sim", function()
+	while true do
+    wait(0.1)
+    local Event = game:GetService("ReplicatedStorage").Events.CoinEvent
+    Event:FireServer()
+
+    if game:GetService("Workspace")[game.Players.LocalPlayer.Name]:FindFirstChild("justFound") ~= nil then
+        game:GetService("Workspace")[game.Players.LocalPlayer.Name].justFound:Destroy()
+    end
+end
+end)
