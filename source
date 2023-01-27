@@ -3,7 +3,7 @@ local Window = Library.CreateLib("Lòst Gui V1", "Midnight")
 
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Lost Scripts Version V1" ,"All")
 
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Respect Mercy!" ,"All")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Enjoy!" ,"All")
 
 
 -- MAIN
