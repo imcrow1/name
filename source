@@ -30,8 +30,8 @@ MainSection:NewButton("Animal Sim Gui", "The Best Admin Script in the game", fun
     getgenv().Ree = false; -- reset
 
     
-    -- Crow Hub v1 --
-    -- MADE By Crow, --
+    -- Lost Hub v1 --
+    -- MADE By Lost, --
     -- (WINDOWS AND MOBILE VERSION) --
     local Players = game:GetService("Players")
     local player = Players.LocalPlayer
@@ -92,7 +92,7 @@ MainSection:NewButton("Animal Sim Gui", "The Best Admin Script in the game", fun
         local ServerDate = Instance.new("TextButton")
         
         -- Propertiers --
-        BlackTrap.Name = "C/R Hub"
+        BlackTrap.Name = "L/M Hub"
         BlackTrap.Parent = game.CoreGui
         BlackTrap.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
         
