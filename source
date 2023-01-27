@@ -40,8 +40,8 @@ MainSection:NewButton("Animal Sim Gui", "The Best Admin Script in the game", fun
     local thumbSize = Enum.ThumbnailSize.Size420x420
     local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
     game:GetService("StarterGui"):SetCore("SendNotification",{  
-    Title = "C/R Hub v1",     
-    Text = "C/R Hub",
+    Title = "L/M Hub v1",     
+    Text = "L/M Hub",
     Icon = "rbxassetid://8666601749",
     Duration = 10,
     Color = Success
@@ -54,8 +54,8 @@ MainSection:NewButton("Animal Sim Gui", "The Best Admin Script in the game", fun
     Color = Info
     })
     
-    if game.CoreGui:FindFirstChild("Crow,3mk") then
-        game.CoreGui:FindFirstChild("Crow,3mk"):Destroy()
+    if game.CoreGui:FindFirstChild("Lòst,3mk") then
+        game.CoreGui:FindFirstChild("Lòst,3mk"):Destroy()
     end
 
     
