@@ -1012,7 +1012,7 @@ Toggle = Section:CreateToggle('Mute All Annoying Audio', true, Color3.fromRGB(0,
         Mute = false
     end
 
-    --Yes this could be rewritten to be more effective, am just too lazy to do so.
+    --eh
 
     if not Mute then
         for i, connection in pairs(getconnections(workspace.DescendantAdded)) do
